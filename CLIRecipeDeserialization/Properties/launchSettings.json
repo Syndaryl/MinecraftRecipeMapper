@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "CLIRecipeDeserialization": {
+      "commandName": "Project",
+      "commandLineArgs": "andesite_alloy_crafting.json",
+      "workingDirectory": ".\\data"
+    }
+  }
+}
