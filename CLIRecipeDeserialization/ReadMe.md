@@ -1,2 +1,3 @@
-== CLIRecipeDeserialization.exe ==
+# CLIRecipeDeserialization.exe
+
 This program is designed to test Syndaryl.Minecraft.JSON library by deserializing Minecraft JSON recipe files. It reads the JSON files from a specified directory and outputs the deserialized objects to the console. The program is intended for developers and modders who want to verify the functionality of the Syndaryl.Minecraft.JSON library and ensure that it can correctly handle various Minecraft recipe formats.
