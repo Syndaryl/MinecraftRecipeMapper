@@ -10,11 +10,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F61D81AF-E02E-463D-9767-8E34821E3E4C}"
 	ProjectSection(SolutionItems) = preProject
 		Overview.txt = Overview.txt
+		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syndaryl.Minecraft.JSON", "Minecraft.JSON.Recipe\Syndaryl.Minecraft.JSON.csproj", "{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syndaryl.Minecraft.MSAGL.RecipeTree", "MSAGL.RecipeTree\Syndaryl.Minecraft.MSAGL.RecipeTree.csproj", "{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIRecipeDeserialization", "CLIRecipeDeserialization\CLIRecipeDeserialization.csproj", "{FC8AEB1F-B67C-4C9F-B86B-6A6850E7A117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +41,10 @@ Global
 		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8AEB1F-B67C-4C9F-B86B-6A6850E7A117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8AEB1F-B67C-4C9F-B86B-6A6850E7A117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8AEB1F-B67C-4C9F-B86B-6A6850E7A117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8AEB1F-B67C-4C9F-B86B-6A6850E7A117}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
