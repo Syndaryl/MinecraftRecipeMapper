@@ -1,0 +1,54 @@
+Addendum to the following: 
+I am comitting myself to reading recipes from the Minecraft JSONs directly as part of the project. Because trying to map the recipes by hand will quickly drive me insane. Except it will also *slowly* dive me insane because of how slow the process will be.
+
+ADHD for the lose, this should be the last real scope creep.
+
+I lied, because once the pile of recipes is parsed, I'm probably going to have a searchable index of recipes or items or something - but that will be a separate *phase*.
+
+
+---
+
+Stream of conciousness project description:
+
+A program that will help me manage crafting recipes and prerequisite ingredient chains in Minecraft. Modded minecraft can add many items, and get out of control pretty quickly, and I'm hoping to be able to visualise the relationships.
+
+First, I would like to be able to enter an object, and then the ingredients of the object (I think that would be a connection from the ingredients to the crafting product, not the other way around?) and have the relationship shown on a flow chart or dependency graph or something. 
+Not sure the technical term for what I want, which is making searching hard: A diagram with a bunch of boxes (one for each item) with arrows showing the relationships (x is required for y)
+
+Very desirable features: 
+* able to load these relationships via an open, text based format. This way I can write a parser for the JSON minecraft recipes to create an importable file, instead of typing everything in manually. CSV, JSON, some sort of bespoke notation of "ingredient -> result" whatever.
+* software attempts to arrange the boxes for me, but allows me to influence/hint or completely override an individual node where necessary, and adjust its routing to accommodate.
+
+Also very good:
+* annotation of the links for e.g. what kind of crafting workstation is needed
+* able to make a relationship more "stretchy" (or tight) in the automatic layout algorithm, to encourage some ingredients to be kept closer while others are allowed much more free and long-distance placement.
+
+Excellent to have but I don't even know how it would work:
+* Ability to handle when there are alternate crafting recipes, without just jamning all the ingredients together in a "rat king" of connections.
+
+Here's a user story to try and illustrate the sort of information that I'm trying to make easier to understand.
+I am trying to craft a biplane from "Man of Many Planes., and the biplane requires two biplane doublewings. 
+I can craft a biplane doublewing by combining two wings, either in a crafting table or using a Create deployer.
+I can craft a wing using a traditional crafting table, three iron rods (from Man of Many Planes), and six canvas panels (from Man of Many Planes) OR I could use Create's sequential crafting to use Deployers on a manufacturing line to apply six windmill sails (from Create) and finally press an iron sheet (from Create) all onto an iron rod (from Man of Many Planes).
+
+A single wing therefore should not show it requiring four iron rods, six canvas panels, six windmill sails, and an iron sheet, all at the same time. That's much more expensive than it actually is.
+
+The first recipe for the wing component has a lot of raw materials, but every part is made at a crafting table:
+an iron rod costs one iron ingot
+a canvas panel costs one carpet and four iron rods
+two wool blocks make six carpets
+
+So ultimately a single wing using the first recipe requires (if I've done my math right) two wool blocks and 27 iron, and only uses a crafting table. 
+
+The second recipe uses a wider variety of ingredients and work stations:
+An iron plate costs one ingot and must be made using a press
+A windmill sail costs four wooden sticks and a full wool block and is made at a crafting bench
+Two wood planks makes 4 sticks (made at a crafting table, or at a sawmill)
+One log makes four planks (at a crafting table) or six planks (using a sawmill)
+The iron rod is the same from the prior recipe.
+
+This recipe uses (I think) in total only two iron ingots, a total of 6 wool, and one log (24 sticks, made from 6 planks, assume we choose the better recipe using the sawmill to make logs into planks). IT also requires a variety of workstations and a factory line. 
+
+Knowing that one recipe requires less iron and the other requires less wool and no wood is useful. Knowing that one recipe only uses a crafting station, and therefore is more amenable to packing everything for crafting a replacement wing "on the go" is very useful. These kinds of information are what I'm trying to get insight into.
+
+Also, if I see that out of the items I'm interested in, many many need (for example) wood planks, I know I need a high capacity production line for sawing planks and growing trees, instead of making massive production lines for everything just in case I need it.
