@@ -2,11 +2,10 @@
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
+using Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.ViewModels;
+using Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.Views;
 
-using RecipeParser.ViewModels;
-using RecipeParser.Views;
-
-namespace RecipeParser;
+namespace Syndaryl.Minecraft.RecipeParser.Avalonia.GUI;
 
 public partial class App : Application
 {

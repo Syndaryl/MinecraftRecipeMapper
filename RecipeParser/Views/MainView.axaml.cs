@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace RecipeParser.Views;
+namespace Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.Views;
 
 public partial class MainView : UserControl
 {

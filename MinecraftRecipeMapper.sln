@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeParser", "RecipeParser\RecipeParser.csproj", "{615DFF1F-BD68-4111-B0BC-38AF04D0BA12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syndaryl.Minecraft.RecipeParser.Avalonia.GUI", "RecipeParser\Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.csproj", "{615DFF1F-BD68-4111-B0BC-38AF04D0BA12}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeParser.Desktop", "RecipeParser.Desktop\RecipeParser.Desktop.csproj", "{1652F0CD-0728-4951-B76C-E1A3ABE52472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syndaryl.Minecraft.RecipeParser.Avalonia.Desktop", "RecipeParser.Desktop\Syndaryl.Minecraft.RecipeParser.Avalonia.Desktop.csproj", "{1652F0CD-0728-4951-B76C-E1A3ABE52472}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F61D81AF-E02E-463D-9767-8E34821E3E4C}"
 	ProjectSection(SolutionItems) = preProject
 		Overview.txt = Overview.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syndaryl.Minecraft.JSON", "Minecraft.JSON.Recipe\Syndaryl.Minecraft.JSON.csproj", "{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syndaryl.Minecraft.MSAGL.RecipeTree", "MSAGL.RecipeTree\Syndaryl.Minecraft.MSAGL.RecipeTree.csproj", "{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{1652F0CD-0728-4951-B76C-E1A3ABE52472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1652F0CD-0728-4951-B76C-E1A3ABE52472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1652F0CD-0728-4951-B76C-E1A3ABE52472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7CA2B8-0D4B-47F8-B132-EE636801B37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D45B04-3EE2-4421-A4B1-3F5A5CCBC5CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

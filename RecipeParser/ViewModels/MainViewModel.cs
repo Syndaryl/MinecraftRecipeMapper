@@ -1,4 +1,4 @@
-﻿namespace RecipeParser.ViewModels;
+﻿namespace Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {

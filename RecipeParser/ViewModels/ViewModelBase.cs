@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace RecipeParser.ViewModels;
+namespace Syndaryl.Minecraft.RecipeParser.Avalonia.GUI.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {

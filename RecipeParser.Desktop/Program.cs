@@ -1,8 +1,8 @@
 ﻿using System;
-
 using Avalonia;
+using Syndaryl.Minecraft.RecipeParser.Avalonia.GUI;
 
-namespace RecipeParser.Desktop;
+namespace Syndaryl.Minecraft.RecipeParser.Avalonia.Desktop;
 
 class Program
 {
